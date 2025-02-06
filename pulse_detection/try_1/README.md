@@ -14,7 +14,10 @@ The time between the right 10% and peak is called the `rise time`.
 Performance requirements:
 - Must be reasonably `faster than Gaussian Regression`.
 - Must be `reasonably accurate`.
-  
+
+Input data looks like: (synthetic)
+
+![Sample](images/pulse_prediction_sample.png)
 
 ### Data Generation
 - Created synthetic dataset of skewed Gaussian pulses
@@ -29,17 +32,17 @@ Built a hybrid model combining:
 - Final FC layer for regression output
 
 Performance on RTX 3050 laptop:
-- Training time: ~24 mins
-- Inference: 3.08ms ± 169μs per pulse
-- CPU inference: 3.6ms ± 82.6μs (surprisingly close!)
+- Training time: `~24 mins`
+- Inference: `3.08ms ± 169μs per pulse`
+- CPU inference: `3.6ms ± 82.6μs (surprisingly close!)`
 
 
 ### Traditional Method (GPR)
 Implemented Gaussian Process Regression as baseline:
 - Uses RBF kernel + white noise
 - Much more computationally intensive
-- Fit time: 487ms ± 98ms per pulse
-- Prediction time: 34.9ms ± 827μs per pulse
+- Fit time: `487ms ± 98ms per pulse`
+- Prediction time: `34.9ms ± 827μs per pulse`
 
 
 ### Concluding Opinion:
