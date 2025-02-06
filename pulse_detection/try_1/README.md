@@ -1,4 +1,4 @@
-# Pulse Detection: Deep Learning vs Traditional Methods
+# Pulse Detection: With CNN-LSTM trying to outperform GPR
 
 ### TL;DR:
 - Built a hybrid CNN-LSTM model to detect peak position and 10% thresholds in noisy skewed Gaussian pulses
