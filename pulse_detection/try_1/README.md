@@ -44,6 +44,10 @@ Implemented Gaussian Process Regression as baseline:
 - Fit time: `487ms ± 98ms per pulse`
 - Prediction time: `34.9ms ± 827μs per pulse`
 
+### Critques:
+- Real data performance is still unknown.
+- fixed context window (200) although that was okay for given problem.
+- Can sometimes be outrageously inaccurate (could not be replicated in notebook)
 
 ### Concluding Opinion:
 For this specific task, the deep learning seems to be better than traditional methods in speed atleast. The CNN-LSTM is ~160x faster than GPR while giving better results.
